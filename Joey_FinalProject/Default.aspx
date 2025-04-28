@@ -27,6 +27,10 @@
         
         
         </div>
+        <div class="labeloutput">
+            <asp:Label ID="lbloutput" runat="server" Text=""></asp:Label> 
+        </div>
+        
     </form> 
 </body>
 </html>
