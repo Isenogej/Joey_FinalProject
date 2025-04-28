@@ -8,7 +8,7 @@ File Name:Andrew.cs
 * Course #/Section:  IS3050/001
 * Semester/Year:  Spring 2025
 * Brief Description of the assignment: Making a project that shows our C# code by using buttons
-
+*Citations: Chat gpt
 * Brief Description of what this module does. Creating a password checker that checks for the strength of a password using C#.
 */
 using System;
