@@ -7,7 +7,7 @@
 * Semester / Year:   Spring 2025
 *Brief Description of the assignment:  In this assignment we are tasked with solving a hard LeetCode probelem to display the test case and the result.
 
-*Brief Description of what this module does: This module outputs the maximum coins you can collect by bursting the balloons wisely.
+*Brief Description of what this module does: This module outputs the result of whether two strings are scrambled versions of each other.
 *Citations: Chat GPT: https://chatgpt.com/
             
  *Anything else that's relevant: NA
