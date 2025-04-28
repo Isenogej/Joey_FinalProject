@@ -27,10 +27,30 @@
         
         
         </div>
-        <div class="labeloutput">
-            <asp:Label ID="lbloutput" runat="server" Text=""></asp:Label> 
+        <div class="lblheader">
+         <asp:Label ID="lblheader" runat="server" Text=""></asp:Label> 
+         </div>
+
+        <br />
+
+        <div class="lbldescription">
+        <asp:Label ID="lbldescription" runat="server" Text=""></asp:Label> 
         </div>
-        
+            
+            <br />
+        <div class="lbltstcase">
+            <asp:Label ID="lbltstcase" runat="server" Text=""></asp:Label>
+
+        </div>
+            
+            <br />
+        <div class="lbloutput">
+            <asp:Label ID="lbloutput" runat="server" Text=""></asp:Label> 
+
+        </div>
+            
+            
+         
     </form> 
 </body>
 </html>

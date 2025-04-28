@@ -18,8 +18,17 @@
     text-align: center;
     
 }
-.labeloutput{
+.lblheader{
     text-align: center;
 
+}
+.lbldescription {
+    text-align: center;
+}
+.lbltstcase {
+    text-align: center;
+}
+.lbloutput {
+    text-align: center;
 }
 

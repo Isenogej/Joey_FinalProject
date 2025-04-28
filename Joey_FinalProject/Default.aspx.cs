@@ -16,22 +16,34 @@ namespace Joey_FinalProject
 
         protected void EVbtn_Click(object sender, EventArgs e)
         {
+            lblheader.Text = "65. Valid Number ";
+            lbldescription.Text = " ";
+            lbltstcase.Text = " ";
             lbloutput.Text = " ";
         }
 
         protected void Abtn_Click(object sender, EventArgs e)
         {
-
+            lblheader.Text = " ";
+            lbldescription.Text = " ";
+            lbltstcase.Text = " ";
+            lbloutput.Text = " ";
         }
 
         protected void ADbtn_Click(object sender, EventArgs e)
         {
-
+            lblheader.Text = " ";
+            lbldescription.Text = " ";
+            lbltstcase.Text = " ";
+            lbloutput.Text = " ";
         }
 
         protected void Jbtn_Click(object sender, EventArgs e)
         {
-
+            lblheader.Text = " ";
+            lbldescription.Text = " ";
+            lbltstcase.Text = " ";
+            lbloutput.Text = " ";
         }
     }
 }

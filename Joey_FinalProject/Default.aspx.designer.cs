@@ -78,6 +78,33 @@ namespace Joey_FinalProject
         protected global::System.Web.UI.WebControls.Button Jeffbtn;
 
         /// <summary>
+        /// lblheader control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblheader;
+
+        /// <summary>
+        /// lbldescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbldescription;
+
+        /// <summary>
+        /// lbltstcase control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbltstcase;
+
+        /// <summary>
         /// lbloutput control.
         /// </summary>
         /// <remarks>
