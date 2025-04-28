@@ -11,12 +11,12 @@ namespace Joey_FinalProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void EVbtn_Click(object sender, EventArgs e)
         {
-            
+            lbloutput.Text = " ";
         }
 
         protected void Abtn_Click(object sender, EventArgs e)
