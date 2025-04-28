@@ -24,10 +24,10 @@ namespace Joey_FinalProject
 
         protected void Abtn_Click(object sender, EventArgs e)
         {
-            lblheader.Text = " ";
-            lbldescription.Text = " ";
-            lbltstcase.Text = " ";
-            lbloutput.Text = " ";
+            lblheader.Text = "312. Burst Balloons";
+            lbldescription.Text = "You are given n ballons, indexed from 0 to n-1. Each balloon is painted with a number on it represented by an array nums. You are asked to burst all the balloons. If you burst the ith balloon, you will get nums[i-1] * nums[i] * nums[i+1] coins. If i-1 or i+1 goes out of the bounds of the array, then treat it as if there is a balloon with a 1 painted on it. Return the maximum coins you can collect by bursting the balloons wisely.";
+            lbltstcase.Text = "Test Case 1: [2,4,6,8] | Test Case 2: [7,9] ";
+            lbloutput.Text = "Test Case 1 Output: 280 | Test Case 2 Output: 72 ";
         }
 
         protected void ADbtn_Click(object sender, EventArgs e)
