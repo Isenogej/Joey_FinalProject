@@ -13,5 +13,25 @@ namespace Joey_FinalProject
         {
 
         }
+
+        protected void EVbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Abtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void ADbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Jbtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
