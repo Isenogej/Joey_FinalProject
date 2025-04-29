@@ -21,63 +21,61 @@ namespace Joey_FinalProject
 {
     public class Jeff
     {
-        
-
-public class Solution
-    {
-        private Dictionary<string, bool> memo = new Dictionary<string, bool>();
-
-        public bool IsScramble(string s1, string s2)
+        public class Solution
         {
-            if (s1 == s2)
-                return true;
+            private Dictionary<string, bool> memo = new Dictionary<string, bool>();
 
-            if (s1.Length != s2.Length)
-                return false;
-
-            string key = s1 + "_" + s2;
-            if (memo.ContainsKey(key))
-                return memo[key];
-
-            // Check if s1 and s2 have the same character counts
-            int[] letters = new int[26];
-            for (int i = 0; i < s1.Length; i++)
+            public bool IsScramble(string s1, string s2)
             {
-                letters[s1[i] - 'a']++;
-                letters[s2[i] - 'a']--;
-            }
-            foreach (int count in letters)
-            {
-                if (count != 0)
-                {
-                    memo[key] = false;
+                if (s1 == s2)
+                    return true;
+
+                if (s1.Length != s2.Length)
                     return false;
-                }
-            }
 
-            for (int i = 1; i < s1.Length; i++)
-            {
-                // No swap scenario
-                if (IsScramble(s1.Substring(0, i), s2.Substring(0, i)) &&
-                    IsScramble(s1.Substring(i), s2.Substring(i)))
+                string key = s1 + "_" + s2;
+                if (memo.ContainsKey(key))
+                    return memo[key];
+
+                // Check if s1 and s2 have the same character counts
+                int[] letters = new int[26];
+                for (int i = 0; i < s1.Length; i++)
                 {
-                    memo[key] = true;
-                    return true;
+                    letters[s1[i] - 'a']++;
+                    letters[s2[i] - 'a']--;
                 }
-
-                // Swap scenario
-                if (IsScramble(s1.Substring(0, i), s2.Substring(s2.Length - i)) &&
-                    IsScramble(s1.Substring(i), s2.Substring(0, s2.Length - i)))
+                foreach (int count in letters)
                 {
-                    memo[key] = true;
-                    return true;
+                    if (count != 0)
+                    {
+                        memo[key] = false;
+                        return false;
+                    }
                 }
-            }
 
-            memo[key] = false;
-            return false;
+                for (int i = 1; i < s1.Length; i++)
+                {
+                    // No swap scenario
+                    if (IsScramble(s1.Substring(0, i), s2.Substring(0, i)) &&
+                        IsScramble(s1.Substring(i), s2.Substring(i)))
+                    {
+                        memo[key] = true;
+                        return true;
+                    }
+
+                    // Swap scenario
+                    if (IsScramble(s1.Substring(0, i), s2.Substring(s2.Length - i)) &&
+                        IsScramble(s1.Substring(i), s2.Substring(0, s2.Length - i)))
+                    {
+                        memo[key] = true;
+                        return true;
+                    }
+                }
+
+                memo[key] = false;
+                return false;
+            }
         }
-    }
 
-}
+    }
 }
