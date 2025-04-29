@@ -10,8 +10,9 @@ File Name: Default.aspx
 *Brief Description of the assignment: Create an aspx webpage with c# to display the hard leet code problems we completed. 
 
 *Brief Description of what this module does. Introduces leetcode as a practice platform for coding, and shows how to use github to push and pull commits among a team. 
-*Citations: 
+*Citations: https://www.w3schools.com/bootstrap5/index.php (Used to import the Bootstrap stylesheet and script)  
 -->
+
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Joey_FinalProject.Default" %>
 
 <!DOCTYPE html>
@@ -19,7 +20,10 @@ File Name: Default.aspx
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="style.css" rel="Stylesheet" type="text/css" />
+
 </head>
 <body>
     <form id="form1" runat="server">
