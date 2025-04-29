@@ -9,7 +9,7 @@
 *Brief Description of the assignment:  Final Project using Leet code to try out 'Hard' C# problems while using Github to collaborate our changes together.
 
 *Brief Description of what this module does. This module is geared to teach us how to collaborate on group projects in Visual studio using Git hub. 
-*Citations: Chatgpt.Com ( inserted code into Chat gpt for code checking and demonstrations)
+*Citations: Chatgpt.com ( inserted code into Chat gpt for code checking and demonstrations)
 *Anything else that's relevant:
 *
 */
