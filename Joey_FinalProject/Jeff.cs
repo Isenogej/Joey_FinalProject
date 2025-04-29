@@ -1,6 +1,7 @@
-﻿/*File Name: Jeff.cs
-*Name: Jeff Whitcomb 
-*email:  whitcojr@mail.uc.edu
+﻿/*
+ * File Name: Jeff.cs
+*Name: Jeff Whitcomb, Alec Bender, Evan Isenogle, Andrew Moore
+*email:  whitcojr@mail.uc.edu, moore6aw@mail.uc.edu. benderax@mail.uc.edu, isenogej@mail.uc.edu
 *Assignment Number: Assignment Final Project
 *Due Date: 4/29/2025
 *Course #/Section:   IS 3050 001

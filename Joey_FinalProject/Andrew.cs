@@ -1,8 +1,8 @@
 ﻿/*
 File Name:Andrew.cs
 
-* Name:Andrew Moore
-* email: moore6aw@mail.uc.edu
+* Name:Jeff Whitcomb, Alec Bender, Evan Isenogle, Andrew Moore
+* email: whitcojr@mail.uc.edu, moore6aw@mail.uc.edu. benderax@mail.uc.edu, isenogej@mail.uc.edu
 * Assignment Number: Final Project
 * Due Date: 04/28/2025
 * Course #/Section:  IS3050/001
