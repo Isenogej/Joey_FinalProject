@@ -33,7 +33,22 @@ namespace Joey_FinalProject
             lblheader.Text = "65. Valid Number ";
             lbldescription.Text = " ";
             lbltstcase.Text = " ";
-            lbloutput.Text = " ";
+            Evan.Solution solution = new Evan.Solution();
+
+            // Test cases
+            string[] testInputs = { "90" };
+            bool[] expectedOutputs = { true };
+
+            // Perform the tests
+            string results = "";
+            for (int i = 0; i < testInputs.Length; i++)
+            {
+                bool result = solution.IsNumber(testInputs[i]);
+                results += $"Test {i + 1}: Input=\"{testInputs[i]}\" => Result={result} (Expected={expectedOutputs[i]})<br/>";
+            }
+
+            // Show the result in a label
+            lbloutput.Text = results;
         }
 
         protected void Abtn_Click(object sender, EventArgs e)
