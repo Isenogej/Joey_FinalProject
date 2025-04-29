@@ -31,9 +31,28 @@ namespace Joey_FinalProject
         protected void EVbtn_Click(object sender, EventArgs e)
         {
             lblheader.Text = "65. Valid Number ";
+
+           
             lbldescription.Text = "Given a string s, return whether s is a valid number.\r\n\r\nFor example, all the following are valid numbers: \"2\", \"0089\", \"-0.1\", \"+3.14\", \"4.\", \"-.9\", \"2e10\", \"-90E3\", \"3e+7\", \"+6e-1\", \"53.5e93\", \"-123.456e789\", while the following are not valid numbers: \"abc\", \"1a\", \"1e\", \"e3\", \"99e2.5\", \"--6\", \"-+3\", \"95a54e53\".\r\n\r\nFormally, a valid number is defined using one of the following definitions:\r\n\r\nAn integer number followed by an optional exponent.\r\nA decimal number followed by an optional exponent.\r\nAn integer number is defined with an optional sign '-' or '+' followed by digits.\r\n\r\nA decimal number is defined with an optional sign '-' or '+' followed by one of the following definitions:\r\n\r\nDigits followed by a dot '.'.\r\nDigits followed by a dot '.' followed by digits.\r\nA dot '.' followed by digits.\r\nAn exponent is defined with an exponent notation 'e' or 'E' followed by an integer number.\r\n\r\nThe digits are defined as one or more digits. ";
             lbltstcase.Text = " Test Case 1: '90'   Test Case 2: '45'  Test Case 3: 'G'";
-            lbloutput.Text = " Test Case 1 returns: 'true'   Test Case 2 output: 'True'   Test Case 3 output: 'False' ";
+          // lbloutput code 
+          Evan.Solution solution = new Evan.Solution();
+
+            // Test cases
+            string[] testInputs = { "90","45", "G" };
+            bool[] expectedOutputs = { true };
+
+            // Perform the tests
+            string results = "";
+            for (int i = 0; i < testInputs.Length; i++)
+            {
+                bool result = solution.IsNumber(testInputs[i]);
+                results += $"Test {i + 1}: Input=\"{testInputs[i]}\" => Result={result} (Expected={expectedOutputs[i]})<br/>";
+            }
+
+            // Show the result in a label
+            lbloutput.Text = results;
+
         }
 
         protected void Abtn_Click(object sender, EventArgs e)
