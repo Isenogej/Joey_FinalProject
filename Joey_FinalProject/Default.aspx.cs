@@ -43,7 +43,6 @@ namespace Joey_FinalProject
             
             bool[] expectedOutputs = { true };
 
-            // Perform the tests
             string results = "";
             for (int i = 0; i < testInputs.Length; i++)
             {
@@ -51,7 +50,6 @@ namespace Joey_FinalProject
                 results += $"Test {i + 1}: Input=\"{testInputs[i]}\" => Result={result} (Expected={expectedOutputs[i]})<br/>";
             }
 
-            // Show the result in a label
             lbloutput.Text = results;
 
         }
@@ -74,8 +72,21 @@ namespace Joey_FinalProject
         {
            lblheader.Text = "420. Strong Password Checker ";
             lbldescription.Text = "You enter a password that has to be at least 6 characters and at most 20 charaacters, It has to contain at least one lowercase letter and it does not contain three repeating characters in a row for the password to be strong. This code will output a number if it is correct.  ";
-            lbltstcase.Text = "jerseymike, 123478, andrew";
-            lbloutput.Text = "2, 2, 2";
+            lbltstcase.Text = "jerseymike";
+            Andrew andrew = new Andrew();
+
+            string[] testPasswords = { "jerseymike" };
+
+            int[] expectedOutputs = { 2 };
+
+            string results = "";
+            for (int i = 0; i < testPasswords.Length; i++)
+            {
+                int result = andrew.StrongPasswordChecker(testPasswords[i]);
+                results += $"Test {i + 1}: Password=\"{testPasswords[i]}\" => Changes Needed={result} (Expected={expectedOutputs[i]})<br/>";
+            }
+
+            lbloutput.Text = results;
         }
 
         protected void Jbtn_Click(object sender, EventArgs e)
@@ -85,7 +96,22 @@ namespace Joey_FinalProject
                 "-Split the string into two non-empty substrings at a random index, i.e., if the string is s, divide it to x and y where s = x + y. - Randomly decide to swap the two substrings or to keep them in the same order. i.e., after this step, s may become s = x + y or s = y + x."
                 + "- Apply step 1 recursively on each of the two substrings x and y. Given two strings s1 and s2 of the same length, return true if s2 is a scrambled string of s1, otherwise, return false.";
             lbltstcase.Text = "Test Case 1: s1 = 'great' s2 = 'rgeat'";
-            lbloutput.Text = "Test Case 1 Output: true";
+            
+            Jeff.Solution solution = new Jeff.Solution();
+
+            string[,] testCases = { {"great", "rgeat", "True" } };
+
+            string results = "";
+            for (int i = 0; i < testCases.GetLength(0); i++)
+            {
+                string s1 = testCases[i, 0];
+                string s2 = testCases[i, 1];
+                bool expectedResult = bool.Parse(testCases[i, 2]);
+                bool result = solution.IsScramble(s1, s2);
+                results += $"Test {i + 1}: Input1=\"{s1}\", Input2=\"{s2}\" => Result={result} (Expected={expectedResult})<br/>";
+            }
+
+            lbloutput.Text = results;
         }
     }
 }
