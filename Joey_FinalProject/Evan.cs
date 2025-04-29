@@ -1,7 +1,7 @@
 ﻿/* 
 * File Name: Evan.cs
-*Name: Evan Isenogle 
-*email:  isenogej@mail.uc.edu
+*Name: Jeff Whitcomb, Alec Bender, Evan Isenogle, Andrew Moore 
+*email:  whitcojr@mail.uc.edu, moore6aw@mail.uc.edu. benderax@mail.uc.edu, isenogej@mail.uc.edu
 *Assignment Number: Assignment Final Project 
 *Due Date: 04-29-2025
 *Course #/Section:   Is 3050 (001)
