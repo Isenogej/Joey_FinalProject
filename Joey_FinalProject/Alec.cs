@@ -46,7 +46,7 @@ namespace Joey_FinalProject
                     }
                 }
             }
-            return dp[n, 1];
+            return dp[1,n];
         }
     }
 }
